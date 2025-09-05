@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightPath Home Tuitions | Quality Education at Home</title>
+    <meta name="description" content="Professional home tuition services in Sargodha, Punjab, Pakistan. Expert tutors for Classes 1-12 in Science, Biology, Chemistry, Physics, Computer Science & more.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+        <div class="floating-orb orb-4"></div>
+    </div>
+
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="logo-container">
+                <img src="images\BrightPath Home Tuitions.jpg" alt="BrightPath Logo" class="logo-img">
+            </div>
+            <div class="loading-text">BrightPath</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images\BrightPath Home Tuitions.jpg" alt="Logo" class="nav-logo">
+                <div class="brand-text">
+                    <span class="brand-name">BrightPath</span>
+                    <span class="brand-subtitle">Home Tuitions</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#tutors" class="nav-link" data-page="tutors">Tutors</a></li>
+                <li><a href="#courses" class="nav-link" data-page="courses">Courses</a></li>
+                <li><a href="#pricing" class="nav-link" data-page="pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content" id="mainContent">
+        
+        <!-- Home Page -->
+        <section class="page active" id="home">
+            <!-- Hero Section -->
+            <div class="hero" data-aos="fade-up">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line" data-aos="fade-right" data-aos-delay="200">Excellence in</span>
+                        <span class="title-line gradient-text" data-aos="fade-left" data-aos-delay="400">Home Education</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                        Professional tutoring services at your doorstep in Sargodha, Punjab. 
+                        Personalized learning experiences for classes 1-12.
+                    </p>
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Students Taught</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Expert Tutors</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="1000">
+                        <button class="btn btn-primary" data-page="contact">
+                            <i class="fas fa-rocket"></i>
+                            Get Started
+                        </button>
+                        <button class="btn btn-outline" data-page="courses">
+                            <i class="fas fa-book"></i>
+                            View Courses
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="zoom-in" data-aos-delay="1200">
+                    <div class="floating-elements">
+                        <div class="float-element" style="--delay: 0s">📚</div>
+                        <div class="float-element" style="--delay: 1s">🧮</div>
+                        <div class="float-element" style="--delay: 2s">🔬</div>
+                        <div class="float-element" style="--delay: 3s">💻</div>
+                        <div class="float-element" style="--delay: 4s">📝</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features-section" data-aos="fade-up">
+                <h2 class="section-title">Why Choose BrightPath?</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home Convenience</h3>
+                        <p>Learn in the comfort of your own home with personalized attention</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Expert Tutors</h3>
+                        <p>Qualified and experienced teachers for all subjects</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Flexible Timing</h3>
+                        <p>Schedule classes according to your convenience</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Progress Tracking</h3>
+                        <p>Regular assessments and progress reports</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section class="page" id="about">
+            <div class="about-hero" data-aos="fade-up">
+                <h1 class="page-title gradient-text">About BrightPath</h1>
+                <p class="page-subtitle">Illuminating minds, one student at a time</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-story" data-aos="fade-right">
+                    <h2>Our Story</h2>
+                    <p>Founded with the vision to provide quality education at home, BrightPath Home Tuitions has been serving students in Sargodha, Punjab, Pakistan for years. We believe that every student deserves personalized attention and the opportunity to excel in their studies.</p>
+                    <p>Our team of dedicated tutors brings years of experience and passion for teaching, ensuring that each student receives the best possible educational support in the comfort of their own home.</p>
+                </div>
+
+                <div class="mission-vision" data-aos="fade-left">
+                    <div class="mission">
+                        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                        <p>To provide exceptional home tutoring services that empower students to achieve academic excellence and develop a lifelong love for learning.</p>
+                    </div>
+                    <div class="vision">
+                        <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                        <p>To be the leading home tuition service in Punjab, recognized for our commitment to quality education and student success.</p>
+                    </div>
+                </div>
+
+                <div class="values" data-aos="fade-up">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-star"></i>
+                            <h4>Excellence</h4>
+                            <p>We strive for excellence in everything we do</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Dedication</h4>
+                            <p>Committed to student success and growth</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Trust</h4>
+                            <p>Building lasting relationships with families</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation</h4>
+                            <p>Using modern teaching methods and technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutors Page -->
+        <section class="page" id="tutors">
+            <div class="tutors-hero" data-aos="fade-up">
+                <h1 class="page-title gradient-text">Our Expert Tutors</h1>
+                <p class="page-subtitle">Meet the professionals who make learning extraordinary</p>
+            </div>
+
+            <div class="tutors-content">
+                <div class="tutor-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All Subjects</button>
+                    <button class="filter-btn" data-filter="science">Science</button>
+                    <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+                    <button class="filter-btn" data-filter="languages">Languages</button>
+                    <button class="filter-btn" data-filter="computer">Computer Science</button>
+                </div>
+
+                <div class="tutors-grid" id="tutorsGrid">
+                    <!-- Tutor cards will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Page -->
+        <section class="page" id="courses">
+            <div class="courses-hero" data-aos="fade-up">
+                <h1 class="page-title gradient-text">Our Courses</h1>
+                <p class="page-subtitle">Comprehensive curriculum for classes 1-12</p>
+            </div>
+
+            <div class="courses-content">
+                <div class="course-categories" data-aos="fade-up">
+                    <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="category-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Mathematics</h3>
+                        <p>Algebra, Geometry, Calculus, Statistics</p>
+                        <ul>
+                            <li>Basic Mathematics (Classes 1-8)</li>
+                            <li>Advanced Mathematics (Classes 9-12)</li>
+                            <li>Problem-solving techniques</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="category-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Sciences</h3>
+                        <p>Physics, Chemistry, Biology</p>
+                        <ul>
+                            <li>General Science (Classes 1-8)</li>
+                            <li>Physics & Chemistry (Classes 9-12)</li>
+                            <li>Biology (Classes 9-12)</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Computer Science</h3>
+                        <p>Programming, Web Development, IT Skills</p>
+                        <ul>
+                            <li>Basic Computer Skills</li>
+                            <li>Programming Languages</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="category-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Languages</h3>
+                        <p>English, Urdu, Pakistan Studies</p>
+                        <ul>
+                            <li>English Language & Literature</li>
+                            <li>Urdu Language</li>
+                            <li>Pakistan Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Page -->
+        <section class="page" id="pricing">
+            <div class="pricing-hero" data-aos="fade-up">
+                <h1 class="page-title gradient-text">Affordable Pricing</h1>
+                <p class="page-subtitle">Quality education that fits your budget</p>
+            </div>
+
+            <div class="pricing-content">
+                <div class="pricing-cards">
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-header">
+                            <h3>Classes 1-10</h3>
+                            <div class="price-badge">Most Popular</div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">5,000</span>
+                                <span class="period">per month</span>
+                            </div>
+                            <p class="price-note">Single Student</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> All subjects covered</li>
+                                <li><i class="fas fa-check"></i> Personalized attention</li>
+                                <li><i class="fas fa-check"></i> Progress tracking</li>
+                                <li><i class="fas fa-check"></i> Flexible timing</li>
+                            </ul>
+                            <div class="multiple-discount">
+                                <strong>Multiple Students: Rs. 4,000 each</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-header">
+                            <h3>Classes 11-12</h3>
+                            <div class="price-badge premium">Premium</div>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">7,000</span>
+                                <span class="period">per month</span>
+                            </div>
+                            <p class="price-note">Single Student</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Advanced subject coverage</li>
+                                <li><i class="fas fa-check"></i> Exam preparation</li>
+                                <li><i class="fas fa-check"></i> University guidance</li>
+                                <li><i class="fas fa-check"></i> Career counseling</li>
+                            </ul>
+                            <div class="multiple-discount">
+                                <strong>Multiple Students: Rs. 6,000 each</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="pricing-header">
+                            <h3>Custom Package</h3>
+                        </div>
+                        <div class="pricing-body">
+                            <div class="price">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">Custom</span>
+                                <span class="period">pricing</span>
+                            </div>
+                            <p class="price-note">Tailored Solutions</p>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Subject-specific tutoring</li>
+                                <li><i class="fas fa-check"></i> Intensive courses</li>
+                                <li><i class="fas fa-check"></i> Exam crash courses</li>
+                                <li><i class="fas fa-check"></i> Group discounts</li>
+                            </ul>
+                            <button class="btn btn-outline"><a href="mailto:zaeemamjad457@gmail.com" class="btn-link">Email Us</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-benefits" data-aos="fade-up">
+                    <h3>What's Included</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-home"></i>
+                            <span>Home Visit Service</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-book"></i>
+                            <span>Study Materials</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Progress Reports</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-phone"></i>
+                            <span>Parent Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section class="page" id="contact">
+            <div class="contact-hero" data-aos="fade-up">
+                <h1 class="page-title gradient-text">Get In Touch</h1>
+                <p class="page-subtitle">Ready to start your learning journey? Contact us today!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+92 319 3763775</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>zaeemamjad457@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Sargodha City, Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact form -->
+                
+                <form class="contact-form" id="contactForm" data-aos="fade-left" method="post" action="handlers/contact_handler.php">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="studentClass">Student Class</label>
+            <select id="studentClass" name="studentClass" required>
+                <option value="">Select Class</option>
+                <option value="1-5">Classes 1-5</option>
+                <option value="6-8">Classes 6-8</option>
+                <option value="9-10">Classes 9-10</option>
+                <option value="11-12">Classes 11-12</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="subjects">Subjects Needed</label>
+            <select id="subjects" name="subjects" required>
+                <option value="">Select Subject</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="biology">Biology</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="english">English</option>
+                <option value="urdu">Urdu</option>
+                <option value="pak-studies">Pakistan Studies</option>
+                <option value="all-subjects">All Subjects</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific requirements..."></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i>
+        Send Message
+    </button>
+</form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-pulse"></div>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images\BrightPath Home Tuitions.jpg" alt="BrightPath Logo">
+                    <div>
+                        <h3>BrightPath</h3>
+                        <p>Home Tuitions</p>
+                    </div>
+                </div>
+                <p>Illuminating minds with quality education at home in Sargodha, Punjab, Pakistan.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home" data-page="home">Home</a></li>
+                    <li><a href="#about" data-page="about">About</a></li>
+                    <li><a href="#tutors" data-page="tutors">Tutors</a></li>
+                    <li><a href="#courses" data-page="courses">Courses</a></li>
+                    <li><a href="#pricing" data-page="pricing">Pricing</a></li>
+                    <li><a href="#contact" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+92 319 3763775</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>zaeemamjad457@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Sargodha City, Punjab, Pakistan</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ZaeemTech/" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zaeemtech/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Zaeem-Amjad" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zaeem-amjad/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 BrightPath Home Tuitions. All rights reserved.</p>
+            <p>Made with ❤️ for quality education</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    
+    fetch('handlers/contact_handler.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Message sent successfully!');
+            this.reset();
+        } else {
+            alert('Error: ' + data.message);
+        }
+    })
+    .catch(error => {
+        alert('Error sending message. Please try again.');
+    });
+});
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
